@@ -58,11 +58,13 @@
 
 .header_fotogram{
     display: flex;
-    align-items: cener;
+    align-items: center;
     background-color: rgba(9, 33, 42, 1);
 }
-.header.img{
-        width: 220px;
+.logo_fotogram{
+    width: 210px;
     height: 40px;
-    padding: 20px, 300px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top:20px;
 }
