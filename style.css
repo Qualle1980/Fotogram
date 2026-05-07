@@ -54,6 +54,7 @@
     font-family: inherit;
     background: initial;
     border: initial;
+    max-width: 1920px;
 }
 
 .header_fotogram{
