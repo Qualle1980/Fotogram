@@ -55,3 +55,14 @@
     background: initial;
     border: initial;
 }
+
+.header_fotogram{
+    display: flex;
+    align-items: cener;
+    background-color: rgba(9, 33, 42, 1);
+}
+.header.img{
+        width: 220px;
+    height: 40px;
+    padding: 20px, 300px;
+}
