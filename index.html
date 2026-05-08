@@ -1,47 +1,77 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>fotogram</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./assets/icons/favicon.png" />
-    <script src="main.js" defer></script>
-    <script src="dom_manupilation.js" defer></script>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>fotogram</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="./assets/icons/favicon.png" />
+        <script src="main.js" defer></script>
+        <script src="dom_manupilation.js" defer></script>
+    </head>
 
-<body>
-    <header>
-        <div class="header_fotogram">
-            <img
-                class="logo_fotogram"
-                src="./assets/icons/fotogram_header.png"
-                alt="logo_fotogram"
-            />
-        </div>
-    </header>
+    <body>
+        <header>
+            <div class="header_fotogram">
+                <img
+                    class="logo_fotogram"
+                    src="./assets/icons/fotogram_header.png"
+                    alt="logo_fotogram"
+                />
+            </div>
+        </header>
 
-    <main>
-        <section class="headline_main">
-            <h1>My next Trip to Japan</h1>
-            <div id="gallery" class="gallery_container"></div>
-        </section>
-    </main>
+        <main>
+            <section class="headline_main">
+                <h1>My next Trip to Japan</h1>
+                <div id="gallery" class="gallery_container"></div>
+            </section>
+        </main>
 
-    <footer class="footer">
-        <div class="footer_wave"></div>
-        <div class="footer_content">
-            <img
-                src="./assets/icons/dv_logo.png"
-                alt="dv_logo"
-                class="footer_logo"
-            />
-            <div class="footer_text">
-                <span>Developer</span>
-                <span>Akademie</span>
-                <p class="p_footer">2026 created by Ahmad Ataya</p>
+        <footer class="footer">
+            <div class="footer_inner">
+                <div class="footer_top">
+                    <img
+                        src="./assets/icons/dv_logo.png"
+                        alt="dv_logo"
+                        class="footer_logo"
+                    />
+                    <div class="footer_brand">
+                        <span>Developer</span>
+                        <span>Akademie</span>
+                    </div>
+                </div>
+                <p class="footer_copy">2026 created by Ahmad Ataya</p>
+            </div>
+        </footer>
+        <div id="lightbox" class="lightbox hidden">
+            <div class="lightbox_box">
+                <span id="closeBtn" class="close_btn">&times;</span>
+                <div id="imageTitle" class="image_title">Bildbeschreibung</div>
+                <img
+                    id="lightboxImage"
+                    class="lightbox_image"
+                    src=""
+                    alt="overview"
+                />
+                <div class="lightbox_bottom">
+                    <span id="prevBtn" class="nav_btn">
+                        <img
+                            src="./assets/icons/arraw left.svg"
+                            alt="left arrow"
+                            class="arrow_icon"
+                        />
+                    </span>
+                    <div id="imageCounter" class="image_counter">1/12</div>
+                    <span id="nextBtn" class="nav_btn">
+                        <img
+                            src="./assets/icons/arraw right.svg"
+                            alt="right arrow"
+                            class="arrow_icon"
+                        />
+                    </span>
+                </div>
             </div>
         </div>
-    </footer>
-</body>
+    </body>
 </html>
