@@ -100,7 +100,9 @@ h1 {
     width: 100%;
     margin: 30px auto 30px auto;
     line-height: 1.2;
-    padding: 0 20px;
+    padding: 0 80px;
+    margin-top: 160px;
+    margin-bottom: 80px;
 }
 
 .gallery_container {
@@ -111,7 +113,8 @@ h1 {
     gap: 20px;                 
     padding: 20px;            
     width: 100%;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    margin-bottom: 80px;    
 }
 
 
