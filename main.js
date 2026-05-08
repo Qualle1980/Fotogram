@@ -51,7 +51,7 @@ function openLightbox(index) {
     updateLightbox();
 
     lightbox.classList.remove("hidden");
-    lightbox.style.display = "flex";   // WICHTIG: Lightbox sichtbar machen
+    lightbox.style.display = "flex";   
 }
 
 
@@ -64,7 +64,7 @@ lightbox.addEventListener("click", (e) => {
 
 function closeLightbox() {
     lightbox.classList.add("hidden");
-    lightbox.style.display = "none";   // WICHTIG: Lightbox komplett entfernen
+    lightbox.style.display = "none";   
 }
 
 
@@ -86,7 +86,6 @@ nextBtn.addEventListener("click", () => {
 function updateLightbox() {
     const imageName = images[currentIndex];
 
-    // Dateiendung entfernen
     const cleanName = imageName.replace(/\.[^/.]+$/, "");
 
     lightboxImage.src = `./assets/img/${imageName}`;
