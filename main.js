@@ -86,9 +86,8 @@ nextBtn.addEventListener("click", () => {
 function updateLightbox() {
     const imageName = images[currentIndex];
 
-    const cleanName = imageName.replace(/\.[^/.]+$/, "");
-
     lightboxImage.src = `./assets/img/${imageName}`;
     imageCounter.textContent = `${currentIndex + 1}/${images.length}`;
-    imageTitle.textContent = cleanName;
+    imageTitle.textContent = imageName; 
 }
+
