@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="ens">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fotogram</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./assets/icons/favicon.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/icons/favicon.png" />
     <script src="main.js" defer></script>
     <script src="dom_manupilation.js" defer></script>
 </head>
@@ -13,19 +13,35 @@
 <body>
     <header>
         <div class="header_fotogram">
-            <img class="logo_fotogram" src="./assets/icons/fotogram_header.png" alt="logo_fotogram">    
-        </div>       
+            <img
+                class="logo_fotogram"
+                src="./assets/icons/fotogram_header.png"
+                alt="logo_fotogram"
+            />
+        </div>
     </header>
+
     <main>
         <section class="headline_main">
             <h1>My next Trip to Japan</h1>
-            <div id="gallery">
-            </div>
+            <div id="gallery" class="gallery_container"></div>
         </section>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <div class="footer_wave"></div>
+        <div class="footer_content">
+            <img
+                src="./assets/icons/dv_logo.png"
+                alt="dv_logo"
+                class="footer_logo"
+            />
+            <div class="footer_text">
+                <span>Developer</span>
+                <span>Akademie</span>
+                <p class="p_footer">2026 created by Ahmad Ataya</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
