@@ -306,24 +306,7 @@ footer {
         max-height: 65vh;
     }
 }
-@media (min-width: 320px) and (max-width: 600px) {
-    .logo_fotogram {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        display: block;
-        margin-inline: auto;
-    }
-    .lightbox_box {
-        max-width: 80vw;
-        max-height: 80vh;
-    }
-    .lightbox_image {
-        max-width: 75vw;
-        max-height: 70vh;
-    }
-}
+
 
 @media (max-width: 600px) {
     .logo_fotogram {
