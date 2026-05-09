@@ -47,11 +47,13 @@
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     height: 100%;
     margin: 0;
 }
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -61,7 +63,7 @@ body {
     flex-direction: column;
     background-color: rgba(6, 23, 30, 1);
 }
-.main{
+.main {
     flex: 1;
 }
 
@@ -107,15 +109,14 @@ h1 {
 .gallery_container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;   
+    justify-content: center;
     align-items: center;
-    gap: 20px;                 
-    padding: 20px;            
+    gap: 20px;
+    padding: 20px;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 80px;    
+    margin-bottom: 80px;
 }
-
 
 .gallery_image {
     width: 150px;
@@ -173,13 +174,12 @@ footer {
 
 .footer_copy {
     font-size: 14px;
-    font-family: 'figtree';
+    font-family: "figtree";
     font-weight: 400;
     opacity: 0.7;
     color: white;
     text-align: center;
 }
-
 
 /* Lightbox */
 .lightbox {
@@ -202,9 +202,9 @@ footer {
     background-color: #09222a;
     padding: 30px;
     border-radius: 12px;
-    width: auto;        
+    width: auto;
     height: auto;
-    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,12 +214,11 @@ footer {
     border-radius: 56px, 64px;
 }
 
-
 /* img */
 .lightbox_image {
     width: 560px;
     height: 357px;
-    object-fit: cover;   
+    object-fit: cover;
     border-radius: 8px;
     max-width: 90vw;
     max-height: 60vh;
@@ -232,7 +231,6 @@ footer {
     text-align: center;
     margin-bottom: 10px;
 }
-
 
 /* Close Button */
 .close_btn {
@@ -260,7 +258,7 @@ footer {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: rgb(85, 56, 56);   
+    background-color: rgb(85, 56, 56);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,15 +267,14 @@ footer {
 }
 
 .nav_btn:hover {
-    background-color: rgb(85, 56, 56); 
+    background-color: rgb(85, 56, 56);
 }
 
 .arrow_icon {
-    width: 22px;  
+    width: 22px;
     height: 22px;
-    background-color: rgb(85, 56, 56); 
+    background-color: rgb(85, 56, 56);
 }
-
 
 /* Counter */
 .image_counter {
@@ -285,8 +282,8 @@ footer {
     font-size: 18px;
     opacity: 0.9;
 }
-@media (min-width:320px) and (max-width: 1200px){
-    .logo_fotogram{
+@media (min-width: 320px) and (max-width: 1200px) {
+    .logo_fotogram {
         margin-left: 0;
         margin-right: 0;
         margin-top: 20px;
@@ -294,10 +291,10 @@ footer {
         display: block;
         margin-inline: auto;
     }
-} 
+}
 
 @media (max-width: 600px) {
-    .logo_fotogram{
+    .logo_fotogram {
         margin-left: 0;
         margin-right: 0;
         margin-top: 20px;
@@ -311,7 +308,7 @@ footer {
         background-color: #09222a;
         justify-content: center;
         align-items: center;
-        font-family: 'figtree';
+        font-family: "figtree";
         font-weight: 400;
     }
     .lightbox_box {
@@ -333,7 +330,7 @@ footer {
         display: block;
         object-position: center;
     }
-    .lightbox_bottom{
+    .lightbox_bottom {
         width: 100%;
         bottom: 40px;
         left: 0;
@@ -344,4 +341,3 @@ footer {
         gap: 40px;
     }
 }
-

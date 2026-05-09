@@ -1,5 +1,3 @@
-
-
 const gallery = document.getElementById("gallery");
 
 const images = [
@@ -14,7 +12,7 @@ const images = [
     "japan_tokio_skyline.png",
     "japan_tokio_tower.jpg",
     "japan_village.jpg",
-    "japan_winter.jpg"
+    "japan_winter.jpg",
 ];
 
 images.forEach((imageName) => {
@@ -24,8 +22,6 @@ images.forEach((imageName) => {
     img.classList.add("gallery_image");
     gallery.appendChild(img);
 });
-
-
 
 const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.getElementById("lightboxImage");
@@ -38,23 +34,17 @@ const closeBtn = document.getElementById("closeBtn");
 
 let currentIndex = 0;
 
-
-
-
 document.querySelectorAll(".gallery_image").forEach((img, index) => {
     img.addEventListener("click", () => openLightbox(index));
 });
-
 
 function openLightbox(index) {
     currentIndex = index;
     updateLightbox();
 
     lightbox.classList.remove("hidden");
-    lightbox.style.display = "flex";   
+    lightbox.style.display = "flex";
 }
-
-
 
 closeBtn.addEventListener("click", () => closeLightbox());
 
@@ -69,11 +59,8 @@ document.addEventListener("keydown", (e) => {
 
 function closeLightbox() {
     lightbox.classList.add("hidden");
-    lightbox.style.display = "none";   
+    lightbox.style.display = "none";
 }
-
-
-
 
 prevBtn.addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
@@ -85,14 +72,10 @@ nextBtn.addEventListener("click", () => {
     updateLightbox();
 });
 
-
-
-
 function updateLightbox() {
     const imageName = images[currentIndex];
 
     lightboxImage.src = `./assets/img/${imageName}`;
     imageCounter.textContent = `${currentIndex + 1}/${images.length}`;
-    imageTitle.textContent = imageName; 
+    imageTitle.textContent = imageName;
 }
-
