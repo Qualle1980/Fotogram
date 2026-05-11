@@ -197,7 +197,7 @@ footer {
     display: none;
 }
 
-..lightbox_box {
+.lightbox_box {
     position: relative;
     background-color: rgba(9, 34, 42, 0.95);
     padding: 20px;
