@@ -77,5 +77,5 @@ function updateLightbox() {
 
     lightboxImage.src = `./assets/img/${imageName}`;
     imageCounter.textContent = `${currentIndex + 1}/${images.length}`;
-    imageTitle.textContent = imageName;
+    imageTitle.textContent = imageName.split(".")[0];
 }
