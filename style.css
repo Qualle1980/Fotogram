@@ -88,7 +88,10 @@
 html, body {
     height: 100%;
 }
-
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
 body {
     min-height: 100vh;
     display: flex;
@@ -344,9 +347,6 @@ footer {
 
     .image_counter {
         font-size: 16px;
-    }
-    html,body{
-        overflow: hidden;
     }
 }
 

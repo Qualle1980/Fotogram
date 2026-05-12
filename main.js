@@ -44,6 +44,8 @@ function openLightbox(index) {
 
     lightbox.classList.remove("hidden");
     lightbox.style.display = "flex";
+
+    document.body.classList.add("no-scroll");
 }
 
 closeBtn.addEventListener("click", () => closeLightbox());
@@ -60,6 +62,7 @@ document.addEventListener("keydown", (e) => {
 function closeLightbox() {
     lightbox.classList.add("hidden");
     lightbox.style.display = "none";
+    document.body.classList.remove("no-scroll");
 }
 
 prevBtn.addEventListener("click", () => {
